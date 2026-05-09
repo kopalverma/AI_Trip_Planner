@@ -22,6 +22,19 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("Built by **Kopal Verma**")
     st.markdown("[GitHub](https://github.com/kopalverma24) | [LinkedIn](https://linkedin.com/in/kopalverma)")
+    st.markdown("---")
+    if st.button("🗑️ Clear Chat"):
+        st.session_state.messages = []
+        st.rerun()
+    st.markdown("### 💡 Try asking:")
+examples = [
+    "Plan a 5 day trip to Goa",
+    "Budget trip to Manali for 3 days",
+    "Best places to visit in Rajasthan"
+]
+for ex in examples:
+    if st.button(ex):
+        st.session_state.prefill = ex
 
 # Custom theme
 st.markdown("""
@@ -68,6 +81,7 @@ if user_input:
                 if response.status_code == 200:
                     answer = response.json().get("answer", "No answer returned.")
                     st.markdown(answer)
+                    st.caption(f"Generated at {datetime.datetime.now().strftime('%H:%M')}")
                     st.session_state.messages.append({"role": "assistant", "content": answer})
                 else:
                     st.error("Backend failed to respond: " + response.text)
