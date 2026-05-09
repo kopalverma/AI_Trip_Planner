@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+<!-- <<<<<<< HEAD
 print(shutil.which("uv"))```
 
 ```pip install uv```
@@ -40,4 +40,14 @@ pinned: false
 ---
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
->>>>>>> e26e7135a06d1655a7e096b5fb751696b7c55b7f
+>>>>>>> e26e7135a06d1655a7e096b5fb751696b7c55b7f -->
+
+
+---
+title: AI Trip Planner
+emoji: 🌍
+colorFrom: blue
+colorTo: red
+sdk: docker
+pinned: false
+---
