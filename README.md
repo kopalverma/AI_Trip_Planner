@@ -83,4 +83,4 @@ AI_Trip_Planner/
 ---
 
 Built by **Kopal Verma** — B.Tech CSE, VIT Bhopal  
-[GitHub](https://github.com/kopalverma24) | [LinkedIn](https://linkedin.com/in/kopalverma)
+[GitHub](https://github.com/kopalverma) | [LinkedIn](https://www.linkedin.com/in/kopal-verma-105379289/)
