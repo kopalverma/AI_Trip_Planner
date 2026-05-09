@@ -1,6 +1,3 @@
-The README you pushed removed the HF config header. Your `README.md` must start with the HF config block. Replace the content of your `README.md` with this:
-
-```markdown
 ---
 title: AI Trip Planner
 emoji: 🌍
@@ -30,55 +27,45 @@ It's not a chatbot that gives generic travel advice. The agent decides which too
 
 ## Tech Stack
 
-| Layer    | Tools                                                                   |
-|-------   |-------                                                                  |
-| Agent    | LangGraph ReAct + Groq (LLaMA 3)                                        |
-| Backend  | FastAPI                                                                 |
-| Frontend | Streamlit                                                               |
-| APIs     | Google Places, Foursquare, Tavily, OpenWeatherMap, ExchangeRate, OpenAI |
+| Layer | Tools |
+|-------|-------|
+| Agent | LangGraph ReAct + Groq (LLaMA 3) |
+| Backend | FastAPI |
+| Frontend | Streamlit |
+| APIs | Google Places, Foursquare, Tavily, OpenWeatherMap, ExchangeRate, OpenAI |
 
 ## Run locally
 
-```bash
-git clone https://github.com/kopalverma24/AI_Trip_Planner.git
-cd AI_Trip_Planner
-pip install -r requirements.txt
-```
+Clone and install:
+    git clone https://github.com/kopalverma24/AI_Trip_Planner.git
+    cd AI_Trip_Planner
+    pip install -r requirements.txt
 
-Create a `.env` file:
-```
-GROQ_API_KEY=
-OPENAI_API_KEY=
-GOOGLE_API_KEY=
-GPLACES_API_KEY=
-FOURSQUARE_API_KEY=
-TAVILY_API_KEY=
-OPENWEATHERMAP_API_KEY=
-EXCHANGE_RATE_API_KEY=
-LANGCHAIN_API_KEY=
-```
+Create a .env file with your keys:
+    GROQ_API_KEY=
+    OPENAI_API_KEY=
+    GOOGLE_API_KEY=
+    GPLACES_API_KEY=
+    FOURSQUARE_API_KEY=
+    TAVILY_API_KEY=
+    OPENWEATHERMAP_API_KEY=
+    EXCHANGE_RATE_API_KEY=
+    LANGCHAIN_API_KEY=
 
-Then run both servers:
-```bash
-# Terminal 1
-uvicorn main:app --reload
-
-# Terminal 2
-streamlit run streamlit_app.py
-```
+Run both servers:
+    uvicorn main:app --reload
+    streamlit run streamlit_app.py
 
 ## Project Structure
 
-```
-AI_Trip_Planner/
-├── agent/
-│   └── agentic_workflow.py
-├── tools/
-├── utils/
-├── main.py
-├── streamlit_app.py
-└── requirements.txt
-```
+    AI_Trip_Planner/
+    ├── agent/
+    │   └── agentic_workflow.py
+    ├── tools/
+    ├── utils/
+    ├── main.py
+    ├── streamlit_app.py
+    └── requirements.txt
 
 ---
 
