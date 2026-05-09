@@ -1,3 +1,15 @@
+The README you pushed removed the HF config header. Your `README.md` must start with the HF config block. Replace the content of your `README.md` with this:
+
+```markdown
+---
+title: AI Trip Planner
+emoji: 🌍
+colorFrom: blue
+colorTo: red
+sdk: docker
+pinned: false
+---
+
 # 🌍 AI Trip Planner
 
 You tell it where you want to go. It figures out the rest — weather, places, currency, itinerary — by calling the right APIs through a LangGraph ReAct agent running on Groq.
@@ -60,11 +72,11 @@ streamlit run streamlit_app.py
 ```
 AI_Trip_Planner/
 ├── agent/
-│   └── agentic_workflow.py   # LangGraph ReAct agent
-├── tools/                    # Tool integrations (weather, places, currency etc.)
-├── utils/                    # Helpers
-├── main.py                   # FastAPI backend
-├── streamlit_app.py          # Streamlit frontend
+│   └── agentic_workflow.py
+├── tools/
+├── utils/
+├── main.py
+├── streamlit_app.py
 └── requirements.txt
 ```
 
